@@ -10,9 +10,8 @@ void timeConversion(string& s) {
 	//checking if its AM or PM
 	if (s[8] == 'A') {
 		//checking if its midnight
-		if (hourTime == 12) {
+		if (hourTime == 12)
 			s.replace(0, 2, "00");
-		}
 	}
 	else {
 		if (hourTime != 12) {
@@ -24,6 +23,7 @@ void timeConversion(string& s) {
 	//removing AM or PM
 	s.erase(8, 9);
 }
+
 int main()
 {
 	string time;
